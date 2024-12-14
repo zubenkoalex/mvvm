@@ -1,0 +1,33 @@
+﻿<Window x:Class="WPF_FP.AddPerson"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_FP"
+        mc:Ignorable="d"
+
+
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Добавление персоны" Height="450" Width="350" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="White" WindowStyle="ToolWindow"  >
+    <Grid>
+        <Border MinWidth="200" VerticalAlignment="Center" Padding="30" CornerRadius="20" Background="#FF841736" MaxWidth="400" Margin="22,0,24,0" Height="364">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="40" Color="#FF201F28" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Добавление персоны" HorizontalAlignment="Center" FontSize="22" Foreground="White" FontFamily="Comic Sans MS"/>
+
+                <TextBox x:Name="Text_name" FontSize="14"  materialDesign:HintAssist.Hint="Введите ФИО" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  Foreground="White" Width="300" CaretBrush="#89FFFFFF" SelectionBrush="#89000000" Background="#00000000" BorderBrush="White" SelectionTextBrush="White" FontFamily="Comic Sans MS"  ></TextBox>
+                <TextBox x:Name="Text_age" FontSize="14"  materialDesign:HintAssist.Hint="Введите воздаст" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  Foreground="White" Width="258" CaretBrush="#89FFFFFF" SelectionBrush="#89000000" Background="#00000000" BorderBrush="White" SelectionTextBrush="White" FontFamily="Comic Sans MS"  ></TextBox>
+                <TextBox x:Name="Text_Category" FontSize="14"  materialDesign:HintAssist.Hint="Введите категорию" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  Foreground="White" Width="258" CaretBrush="#89FFFFFF" SelectionBrush="#89000000" Background="#00000000" BorderBrush="White" SelectionTextBrush="White" FontFamily="Comic Sans MS"  ></TextBox>
+                <TextBox x:Name="Text_PlaceOfBirth" FontSize="14"  materialDesign:HintAssist.Hint="Введите место рождения" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  Foreground="White" Width="258" CaretBrush="#89FFFFFF" SelectionBrush="#89000000" Background="#00000000" BorderBrush="White" SelectionTextBrush="White" FontFamily="Comic Sans MS"  ></TextBox>
+                <TextBox x:Name="Text_Progress" FontSize="14"  materialDesign:HintAssist.Hint="Введите достижеие" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  Foreground="White" Width="258" CaretBrush="#89FFFFFF" SelectionBrush="#89000000" Background="#00000000" BorderBrush="White" SelectionTextBrush="White" FontFamily="Comic Sans MS"  ></TextBox>
+
+                <Grid Margin=" 0 20 0 0">
+                    <Button  Content="Добавить" Click="ButtonAddPerson" Foreground="White" Background="#FF211E29" HorizontalAlignment="Center" BorderBrush="#00000000" FontFamily="Comic Sans MS"/>
+                </Grid>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

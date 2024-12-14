@@ -1,0 +1,24 @@
+﻿<Window x:Class="HospitalDocumentation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalDocumentation.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Записи на приём" Command="{Binding OpenAppointmentRecordCommand}" HorizontalAlignment="Left" Margin="170,110,0,0" VerticalAlignment="Top" Height="45" Width="140"/>
+        <Button Content="Рецепты" Command="{Binding OpenRecipeCommand}" HorizontalAlignment="Left" Margin="490,110,0,0" VerticalAlignment="Top" Height="45" Width="140"/>
+        <Button Content="Список врачей" Command="{Binding OpenDoctorCommand}" HorizontalAlignment="Left" Margin="170,230,0,0" VerticalAlignment="Top" Height="45" Width="140"/>
+        <Button Content="Медицинские карты" Command="{Binding OpenMedicalRecordCommand}" HorizontalAlignment="Left" Margin="332,112,0,0" VerticalAlignment="Top" Height="45" Width="140"/>
+        <Button Content="Список пациентов" Command="{Binding OpenPatientCommand}" HorizontalAlignment="Left" Margin="490,230,0,0" VerticalAlignment="Top" Height="45" Width="140"/>
+        <Button Content="Препараты" Command="{Binding OpenDrugCommand}" HorizontalAlignment="Left" Margin="170,315,0,0" VerticalAlignment="Top" Height="45" Width="140"/>
+        <Button Content="Аптеки" Command="{Binding OpenDrugstoreCommand}"  HorizontalAlignment="Left" Margin="490,315,0,0" VerticalAlignment="Top" Height="45" Width="140"/>
+        <Button Content="Лабораторные анализы" Command="{Binding OpenLaboratoryTestCommand}" HorizontalAlignment="Left" Margin="490,28,0,0" VerticalAlignment="Top" Height="45" Width="140"/>
+        <Button Content="Истории болезни" Command="{Binding OpenMedicalHistoryCommand}" HorizontalAlignment="Left" Margin="170,28,0,0" VerticalAlignment="Top" Height="45" Width="140"/>
+        <Button Content="Автопарк" Command="{Binding OpenCarDoctorCommand}" HorizontalAlignment="Left" Margin="332,231,0,0" VerticalAlignment="Top" Height="45" Width="140" Click="Button_Click"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Александр\Desktop\HospitalDocumentation\Image.jpg"/>
+        </Grid.Background>
+    </Grid>
+</Window>

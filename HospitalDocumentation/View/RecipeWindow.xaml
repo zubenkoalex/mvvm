@@ -1,0 +1,41 @@
+﻿<Window x:Class="HospitalDocumentation.View.RecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalDocumentation.View"
+        xmlns:vm="clr-namespace:HospitalDocumentation.ViewModel"
+        mc:Ignorable="d"
+        Name="root"
+        Title="RecipeWindow" Height="450" Width="730">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+            <Button Content="Добавить" 
+                    Command="{Binding AddCommand}"
+                    Margin="0,0,5,0"/>
+            <Button Content="Изменить" 
+                    Command="{Binding EditCommand}"
+                    Margin="0,0,5,0"/>
+            <Button Content="Удалить" 
+                    Command="{Binding DeleteCommand}"/>
+        </StackPanel>
+
+        <DataGrid Grid.Row="1"
+                  ItemsSource="{Binding Recipes}"
+                  SelectedItem="{Binding SelectedRecipe}"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Препарат" Binding="{Binding Drug.Name}"/>
+                <DataGridTextColumn Header="Дозировка" Binding="{Binding Drug.Dosage}"/>
+                <DataGridTextColumn Header="Дата выписки" Binding="{Binding Date}"/>
+                <DataGridTextColumn Header="Длительность приёма" Binding="{Binding Duration}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

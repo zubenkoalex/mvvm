@@ -1,0 +1,61 @@
+﻿<Window x:Class="HospitalDocumentation.View.CarDoctorsAddEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalDocumentation.View"
+        mc:Ignorable="d"
+        Title="CarDoctorsAddEditWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <TextBlock Text="Марка:" Grid.Row="0" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="5"
+              Text="{Binding Mark, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+        <TextBlock Text="Модель:" Grid.Row="1" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="6,0,4,0"
+             Text="{Binding Model, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+
+        <TextBlock Text="Поколение:" Grid.Row="2" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="5"
+      Text="{Binding Generation, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+        <TextBlock Text="Год выпуска:" Grid.Row="3" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Margin="5"
+              Text="{Binding ReleaseYear, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+        <TextBlock Text="Примерная цена:" Grid.Row="4" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Margin="5"
+              Text="{Binding ApproximatePrice, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+        <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" 
+                 Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Сохранить" Click="SaveButton_Click" 
+                 Width="100" Height="30" Margin="5"/>
+            <Button Content="Отмена" IsCancel="True" 
+                 Width="100" Height="30" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

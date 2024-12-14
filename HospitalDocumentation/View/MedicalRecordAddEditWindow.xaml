@@ -1,0 +1,83 @@
+﻿<Window x:Class="HospitalDocumentation.View.MedicalRecordAddEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalDocumentation.View"
+         xmlns:vm="clr-namespace:HospitalDocumentation.ViewModel"
+        mc:Ignorable="d"
+        Title="MedicalRecordAddEditWindow" Height="450" Width="800" WindowStartupLocation="CenterOwner">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        
+        <TextBlock Text="Пациент:" Grid.Row="0" Margin="5" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="0" Grid.Column="1" Margin="5"
+                  ItemsSource="{Binding Patients}"
+                  SelectedValue="{Binding MedicalRecord.PatientId}"
+                  SelectedValuePath="Id"
+                  DisplayMemberPath="Name"/>
+
+       
+        <TextBlock Text="Врач:" Grid.Row="1" Margin="5" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="1" Grid.Column="1" Margin="5"
+                  ItemsSource="{Binding Doctors}"
+                  SelectedValue="{Binding MedicalRecord.DoctorId}"
+                  SelectedValuePath="Id"
+                  DisplayMemberPath="Name"/>
+
+
+        <TextBlock Text="Дата записи:" Grid.Row="2" Margin="5" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="2" Grid.Column="1" Margin="5"
+                  ItemsSource="{Binding AppointmentRecords}"
+                  SelectedValue="{Binding MedicalRecord.AppointmentRecordId}"
+                  SelectedValuePath="Id"
+                  DisplayMemberPath="Date"/>
+        
+
+        <TextBlock Text="Диагноз:" Grid.Row="3" Margin="5" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="3" Grid.Column="1" Margin="5"
+                  ItemsSource="{Binding MedicalHistories}"
+                  SelectedValue="{Binding MedicalRecord.MedicalHistoryId}"
+                  SelectedValuePath="Id"
+                  DisplayMemberPath="Diagnosis"/>
+        
+
+        <TextBlock Text="Дата назначения рецепта:" Grid.Row="4" Margin="5" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="4" Grid.Column="1" Margin="5"
+                  ItemsSource="{Binding Recipes}"
+                  SelectedValue="{Binding MedicalRecord.RecipeId}"
+                  SelectedValuePath="Id"
+                  DisplayMemberPath="Date"/>
+
+        <TextBlock Text="Анализ:" Grid.Row="5" Margin="5" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="5" Grid.Column="1" Margin="5"
+                ItemsSource="{Binding LaboratoryTests}"
+                SelectedValue="{Binding MedicalRecord.LaboratoryTestId}"
+                SelectedValuePath="Id"
+                DisplayMemberPath="Type"/>
+       
+        
+        <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" 
+                    Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Сохранить" Click="SaveButton_Click" 
+                    Width="100" Height="30" Margin="5"/>
+            <Button Content="Отмена" IsCancel="True" 
+                    Width="100" Height="30" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>

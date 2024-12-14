@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\AppointmentRecordAddEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\AppointmentRecordWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CarDoctorsAddEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CarDoctorsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DoctorAddEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DoctorWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DrugAddEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DrugstoreAddEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DrugstoreWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DrugWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\LaboratoryTestAddEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\LaboratoryTestWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MedicalHistoryAddEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MedicalHistoryWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MedicalRecordAddEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MedicalRecordWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PatientAddEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PatientWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\RecipeAddEditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\RecipeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\AppointmentRecordAddEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\AppointmentRecordWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CarDoctorsAddEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CarDoctorsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DoctorAddEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DoctorWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DrugAddEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DrugstoreAddEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DrugstoreWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DrugWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\LaboratoryTestAddEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\LaboratoryTestWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MedicalHistoryAddEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MedicalHistoryWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MedicalRecordAddEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MedicalRecordWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PatientAddEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PatientWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\RecipeAddEditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\RecipeWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
