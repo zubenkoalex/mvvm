@@ -18,7 +18,7 @@
         <Button Content="Истории болезни" Command="{Binding OpenMedicalHistoryCommand}" HorizontalAlignment="Left" Margin="170,28,0,0" VerticalAlignment="Top" Height="45" Width="140"/>
         <Button Content="Автопарк" Command="{Binding OpenCarDoctorCommand}" HorizontalAlignment="Left" Margin="332,231,0,0" VerticalAlignment="Top" Height="45" Width="140" Click="Button_Click"/>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Александр\Desktop\HospitalDocumentation\Image.jpg"/>
+            <ImageBrush ImageSource="C:\Users\Александр\Desktop\Учеба\Дувалин Курсач\HospitalDocumentation\Image.jpg"/>
         </Grid.Background>
     </Grid>
 </Window>

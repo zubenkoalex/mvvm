@@ -1,5 +1,5 @@
-﻿using HospitalDocumentation.Model;
-using HospitalDocumentation.Model.Enities;
+﻿using HospitalDocumentation.Model.Enities;
+using HospitalDocumentation.Model;
 using HospitalDocumentation.View;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -59,7 +59,7 @@ namespace HospitalDocumentation.ViewModel
             {
                 using (var context = new HospContext())
                 {
-                    var doctors = context.DoctorEntities.ToList();
+                    var doctors = context.DoctorEntities.Include(c => c.Car).ToList();
                     Doctors = new ObservableCollection<DoctorEntity>(doctors);
                 }
             }
@@ -75,13 +75,13 @@ namespace HospitalDocumentation.ViewModel
             {
                 using (var context = new HospContext())
                 {
-                    var maxId = context.DoctorEntities.Max(d => d.Id);
+                    var maxId = context.RecipeEntities.Max(d => d.Id);
 
                     var doctor = new DoctorEntity
                     {
-                        Id = maxId + 1, 
+                        Id = maxId + 1,
                         Name = "",
-                        Speciality = "", 
+                        Speciality = "",
                         PhoneNumber = "",
                         Email = ""
                     };
@@ -131,7 +131,6 @@ namespace HospitalDocumentation.ViewModel
                         return;
                     }
 
-            
                     var editedDoctor = new DoctorEntity
                     {
                         Id = doctorToEdit.Id,
@@ -156,7 +155,7 @@ namespace HospitalDocumentation.ViewModel
                             return;
                         }
 
-                   
+
                         context.Entry(doctorToEdit).CurrentValues.SetValues(editedDoctor);
                         context.SaveChanges();
                         LoadDoctors();
@@ -205,3 +204,4 @@ namespace HospitalDocumentation.ViewModel
         }
     }
 }
+

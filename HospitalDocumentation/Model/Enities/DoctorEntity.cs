@@ -20,4 +20,12 @@ public partial class DoctorEntity
     public virtual CarDoctorsEntity? Car { get; set; }
 
     public virtual ICollection<MedicalRecordEntity> MedicalRecordEntities { get; set; } = new List<MedicalRecordEntity>();
+
+    public CarDoctorsEntity CarDoctorsEntity
+    {
+        get => default;
+        set
+        {
+        }
+    }
 }

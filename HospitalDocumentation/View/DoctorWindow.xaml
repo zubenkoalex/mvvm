@@ -35,6 +35,8 @@
                 <DataGridTextColumn Header="Специальность" Binding="{Binding Speciality}"/>
                 <DataGridTextColumn Header="Телефон" Binding="{Binding PhoneNumber}"/>
                 <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
+                <DataGridTextColumn Header="Марка" Binding="{Binding Car.Mark}"/>
+                <DataGridTextColumn Header="Модель" Binding="{Binding Car.Model}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

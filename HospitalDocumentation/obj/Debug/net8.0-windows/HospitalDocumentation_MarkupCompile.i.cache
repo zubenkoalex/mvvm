@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Александр\Desktop\HospitalDocumentation\obj\Debug\net8.0-windows\
+C:\Users\Александр\Desktop\Учеба\Дувалин Курсач\HospitalDocumentation\obj\Debug\net8.0-windows\
 HospitalDocumentation
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Александр\Desktop\HospitalDocumentation\App.xaml
+C:\Users\Александр\Desktop\Учеба\Дувалин Курсач\HospitalDocumentation\App.xaml
 21-1830447389
 
-67-1935579539
+71-709403785
 242792897167
 View\AppointmentRecordAddEditWindow.xaml;View\AppointmentRecordWindow.xaml;View\CarDoctorsAddEditWindow.xaml;View\CarDoctorsWindow.xaml;View\DoctorAddEditWindow.xaml;View\DoctorWindow.xaml;View\DrugAddEditWindow.xaml;View\DrugstoreAddEditWindow.xaml;View\DrugstoreWindow.xaml;View\DrugWindow.xaml;View\LaboratoryTestAddEditWindow.xaml;View\LaboratoryTestWindow.xaml;View\MainWindow.xaml;View\MedicalHistoryAddEditWindow.xaml;View\MedicalHistoryWindow.xaml;View\MedicalRecordAddEditWindow.xaml;View\MedicalRecordWindow.xaml;View\PatientAddEditWindow.xaml;View\PatientWindow.xaml;View\RecipeAddEditWindow.xaml;View\RecipeWindow.xaml;
 
-True
+False
 

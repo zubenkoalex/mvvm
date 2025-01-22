@@ -44,7 +44,20 @@
         <TextBox Grid.Row="3" Grid.Column="1" Margin="5"
              Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}"/>
 
-    
+        <TextBlock Text="Марка:" Grid.Row="4" Margin="5" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="4" Grid.Column="1" Margin="5"
+                  SelectedValue="{Binding Doctors.CarId}"
+                  SelectedValuePath="Id"
+                  DisplayMemberPath="Mark"/>
+
+        <TextBlock Text="Модель:" Grid.Row="5" Margin="5" VerticalAlignment="Center"/>
+        <ComboBox Grid.Row="5" Grid.Column="1" Margin="5"
+                  ItemsSource="{Binding CarDoctorEntities}"
+                  SelectedValue="{Binding Doctors.CarId}"
+                  SelectedValuePath="Id"
+                  DisplayMemberPath="Model"/>
+
+
         <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" 
                 Orientation="Horizontal" HorizontalAlignment="Right">
             <Button Content="Сохранить" Click="SaveButton_Click" 

@@ -10,4 +10,12 @@ public partial class DrugstoreEntity
     public int? DrugId { get; set; }
 
     public virtual DrugEntity? Drug { get; set; }
+
+    public DrugEntity DrugEntity
+    {
+        get => default;
+        set
+        {
+        }
+    }
 }

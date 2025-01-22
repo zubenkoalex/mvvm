@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HospitalDocumentation.Model.Enities.AppointmentRecordEntity">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAIAAAQAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enities\AppointmentRecordEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HospitalDocumentation.Model.Enities.CarDoctorsEntity">
+    <Position X="10.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAEAAAAAAAAIAQAAAAiAAAAAABA=</HashCode>
+      <FileName>Model\Enities\CarDoctorsEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HospitalDocumentation.Model.Enities.DoctorEntity">
+    <Position X="8.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACQAAAAAAAQAQASAAAAAAAEAAAAAAAACAAA=</HashCode>
+      <FileName>Model\Enities\DoctorEntity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CarDoctorsEntity" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HospitalDocumentation.Model.Enities.DrugEntity">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAgAAAAAAAAAAAQwAIAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Model\Enities\DrugEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HospitalDocumentation.Model.Enities.DrugstoreEntity">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAABAAAIAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enities\DrugstoreEntity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DrugEntity" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HospitalDocumentation.Model.Enities.LaboratoryTestEntity">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAQAAAQAAAAAAAABAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Enities\LaboratoryTestEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HospitalDocumentation.Model.Enities.MedicalHistoryEntity">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAACABAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enities\MedicalHistoryEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HospitalDocumentation.Model.Enities.MedicalRecordEntity">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAEBAAQAAAAAAABAIAAAYAAaCAAQAAAQBCAAACAA=</HashCode>
+      <FileName>Model\Enities\MedicalRecordEntity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MedicalHistoryEntity" />
+      <Property Name="LaboratoryTestEntity" />
+      <Property Name="DoctorEntity" />
+      <Property Name="PatientEntity" />
+      <Property Name="AppointmentRecordEntity" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HospitalDocumentation.Model.Enities.PatientEntity">
+    <Position X="12.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAABAAAAAQAQAQAAAAQAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Enities\PatientEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HospitalDocumentation.Model.HospContext">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAAAAQgQAAACAQQAAAAQEgAAEQAIAAAABAAAAAA=</HashCode>
+      <FileName>Model\HospContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NotifyProperty" />
+      <Property Name="RelayCommand" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HospitalDocumentation.Model.NotifyProperty">
+    <Position X="1" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NotifyProperty.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HospitalDocumentation.Model.RelayCommand" Collapsed="true">
+    <Position X="1.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

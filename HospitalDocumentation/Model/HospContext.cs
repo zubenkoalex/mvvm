@@ -36,6 +36,22 @@ public partial class HospContext : DbContext
 
     public virtual DbSet<RecipeEntity> RecipeEntities { get; set; }
 
+    public NotifyProperty NotifyProperty
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
+    public RelayCommand RelayCommand
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Server=zubenkoag;Database=Hosp;User=user1;Password=sa;Trusted_Connection=true;MultipleActiveResultSets=true;TrustServerCertificate=true;encrypt=false");
 

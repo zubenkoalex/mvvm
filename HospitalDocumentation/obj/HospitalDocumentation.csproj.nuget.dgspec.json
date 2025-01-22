@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Александр\\Desktop\\HospitalDocumentation\\HospitalDocumentation.csproj": {}
+    "C:\\Users\\Александр\\Desktop\\Учеба\\Дувалин Курсач\\HospitalDocumentation\\HospitalDocumentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Александр\\Desktop\\HospitalDocumentation\\HospitalDocumentation.csproj": {
+    "C:\\Users\\Александр\\Desktop\\Учеба\\Дувалин Курсач\\HospitalDocumentation\\HospitalDocumentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Александр\\Desktop\\HospitalDocumentation\\HospitalDocumentation.csproj",
+        "projectUniqueName": "C:\\Users\\Александр\\Desktop\\Учеба\\Дувалин Курсач\\HospitalDocumentation\\HospitalDocumentation.csproj",
         "projectName": "HospitalDocumentation",
-        "projectPath": "C:\\Users\\Александр\\Desktop\\HospitalDocumentation\\HospitalDocumentation.csproj",
+        "projectPath": "C:\\Users\\Александр\\Desktop\\Учеба\\Дувалин Курсач\\HospitalDocumentation\\HospitalDocumentation.csproj",
         "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Александр\\Desktop\\HospitalDocumentation\\obj\\",
+        "outputPath": "C:\\Users\\Александр\\Desktop\\Учеба\\Дувалин Курсач\\HospitalDocumentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

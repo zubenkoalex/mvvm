@@ -30,4 +30,44 @@ public partial class MedicalRecordEntity
     public virtual PatientEntity? Patient { get; set; }
 
     public virtual RecipeEntity? Recipe { get; set; }
+
+    public MedicalHistoryEntity MedicalHistoryEntity
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
+    public LaboratoryTestEntity LaboratoryTestEntity
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
+    public DoctorEntity DoctorEntity
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
+    public PatientEntity PatientEntity
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
+    public AppointmentRecordEntity AppointmentRecordEntity
+    {
+        get => default;
+        set
+        {
+        }
+    }
 }

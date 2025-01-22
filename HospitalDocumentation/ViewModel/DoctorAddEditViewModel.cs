@@ -15,6 +15,7 @@ namespace HospitalDocumentation.ViewModel
     public class DoctorAddEditViewModel : NotifyProperty
     {
         private DoctorEntity _doctor;
+        private ObservableCollection<CarDoctorsEntity> _cars;
 
         public DoctorEntity Doctor
         {
@@ -26,12 +27,31 @@ namespace HospitalDocumentation.ViewModel
             }
         }
 
+        public ObservableCollection<CarDoctorsEntity> Cars
+        {
+            get => _cars;
+            set
+            {
+                _cars = value;
+                OnPropertyChanged();
+            }
+        }
+
         public ICommand SaveCommand { get; }
 
         public DoctorAddEditViewModel(DoctorEntity doctor)
         {
             _doctor = doctor;
+            LoadCars();
             SaveCommand = new RelayCommand(Save, CanSave);
+        }
+
+        private void LoadCars()
+        {
+            using (var context = new HospContext())
+            {
+                Cars = new ObservableCollection<CarDoctorsEntity>(context.CarDoctorsEntities.ToList());
+            }
         }
 
         private bool CanSave()
